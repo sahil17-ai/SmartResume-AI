@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # SmartResume AI 🚀
 ### Industry-Level SaaS Resume Builder with AI Selection Predictor
 
@@ -285,3 +286,6 @@ Built with ❤️ — SmartResume AI
 =======
 # smartresume-final
 >>>>>>> 44cc9801b6f6dd8f954e040f22eaf872dcb3c4b0
+=======
+# SmartResume-AI
+>>>>>>> ef550792f7a296f65afaca245bc49580815d9e40
