@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
+import API from "../config";
 
 const AuthContext = createContext(null);
-const API = "https://smartresume-clean-production.up.railway.app";
 
 async function safeJson(res) {
   const text = await res.text();

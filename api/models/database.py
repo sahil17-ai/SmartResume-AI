@@ -2,8 +2,12 @@ from sqlalchemy import create_engine, Column, Integer, String, Float, Text, Date
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 from datetime import datetime
+import os
 
-DATABASE_URL = "sqlite:///./smartresume.db"
+if os.getenv("VERCEL"):
+    DATABASE_URL = "sqlite:////tmp/smartresume.db"
+else:
+    DATABASE_URL = "sqlite:///./smartresume.db"
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()

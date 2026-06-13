@@ -9,7 +9,7 @@ export default function AdminPanel({ navigate }) {
   const [loading, setLoading] = useState(false);
   const [msg, setMsg] = useState("");
   const [resetTarget, setResetTarget] = useState(null);
-  const [newPass, setNewPass] = useState("");
+  const [newPass, setNewPass] = useState("");N
 
   useEffect(() => {
     if (adminToken) fetchStats();
